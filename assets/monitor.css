@@ -1,0 +1,273 @@
+html,
+body,
+#root,
+ul,
+p {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Droid Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  background: black;
+  color: white; }
+
+#root ul {
+  list-style: none;
+  clear: both;
+  overflow: hidden; }
+#root li {
+  margin: 0;
+  position: relative; }
+#root .blue,
+#root .grey {
+  background: ForestGreen;
+  color: white; }
+#root .blue_anime,
+#root .grey_anime {
+  background: SteelBlue;
+  color: white;
+  -webkit-animation: blue_anime 1s infinite; }
+#root .aborted_anime,
+#root .yellow {
+  background: Gold; }
+#root .red_anime {
+  background: Gold;
+  color: black;
+  -webkit-animation: aborted_anime 1s infinite; }
+#root .red,
+#root .aborted {
+  background: Crimson;
+  color: white; }
+#root .disabled {
+  background: grey;
+  color: white; }
+  #root .disabled .last-commit {
+    display: none; }
+#root .fixing {
+  background: Gold;
+  color: black; }
+  #root .fixing .project-name {
+    text-shadow: white 0 1px 0; }
+  #root .fixing .last-commit {
+    display: none; }
+#root .hidden {
+  display: none; }
+
+.prioritary_jobs .basic-info,
+.secondary_jobs .basic-info {
+  text-shadow: rgba(0, 0, 0, 0.6) 0 -1px 0; }
+
+.prioritary_jobs {
+  font-size: 40px;
+  line-height: 40px; }
+  .prioritary_jobs li {
+    padding: 20px;
+    height: 120px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+  .prioritary_jobs .basic-info {
+    float: left; }
+  .prioritary_jobs .last-commit {
+    margin-top: 15px;
+    padding: 0 10px;
+    clear: left;
+    float: left;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    z-index: 1;
+    font-size: 20px;
+    line-height: 28px;
+    margin-right: 440px; }
+  .prioritary_jobs .authors {
+    text-transform: uppercase;
+    line-height: 1.5em;
+    font-size: 1.25em; }
+  .prioritary_jobs .commit-hash {
+    margin-left: 1em;
+    font-family: monospace;
+    font-weight: 900; }
+    .prioritary_jobs .commit-hash:after {
+      content: "… "; }
+    .prioritary_jobs .commit-hash:empty {
+      display: none; }
+  .prioritary_jobs .remaining-time {
+    padding: 18px;
+    border-radius: 4px;
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    top: 42px;
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 20px;
+    color: white;
+    height: 40px; }
+    .prioritary_jobs .remaining-time:empty {
+      display: none; }
+    .prioritary_jobs .remaining-time[data-remaining-time^='-'], .prioritary_jobs .remaining-time[data-remaining-time='0'] {
+      display: none; }
+  .prioritary_jobs .commiters {
+    position: absolute;
+    right: 200px; }
+    .prioritary_jobs .commiters img {
+      height: 40px;
+      margin-left: 10px; }
+  .prioritary_jobs .on-queue {
+    margin-left: 1em;
+    top: -9px;
+    position: relative;
+    font-size: 17px;
+    padding: 3px 12px; }
+
+.secondary_jobs li {
+  width: 33%;
+  float: left; }
+  .secondary_jobs li:nth-child(3n+3) {
+    width: 34%; }
+.secondary_jobs .build-number,
+.secondary_jobs .project-name {
+  font-size: 20px; }
+.secondary_jobs .build-number {
+  text-align: right;
+  width: 50px; }
+.secondary_jobs .job {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  height: 50px;
+  line-height: 50px;
+  text-indent: 20px; }
+.secondary_jobs .remaining-time,
+.secondary_jobs .last-commit {
+  display: none; }
+.secondary_jobs .commiters {
+  display: none; }
+.secondary_jobs .on-queue {
+  float: right;
+  line-height: 2.1em;
+  display: block;
+  text-indent: 0;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -1.05em; }
+
+.on-queue {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  font-size: 0.75em;
+  padding: 0px 10px; }
+
+@-webkit-keyframes aborted_anime {
+  0% {
+    background: Gold; }
+
+  50% {
+    background: Khaki; }
+
+  100% {
+    background: Gold; } }
+
+@-webkit-keyframes blue_anime {
+  0% {
+    background: SteelBlue; }
+
+  50% {
+    background: DodgerBlue; }
+
+  100% {
+    background: SteelBlue; } }
+
+.info {
+  text-align: center; }
+
+.image-wrapper {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  display: inline-block; }
+  .image-wrapper img {
+    border: 10px solid black;
+    outline: 1px solid white;
+    position: relative;
+    overflow: hidden; }
+  .image-wrapper span {
+    position: absolute;
+    color: white;
+    bottom: 48px;
+    left: 50%;
+    margin-left: -105px;
+    font-size: 1.5em; }
+
+#hudson-info img {
+  height: 300px; }
+
+.spin-container {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3); }
+
+.spin {
+  height: 50px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -79px/2;
+  margin-left: -79px/2; }
+
+.statuses {
+  list-style: none;
+  overflow: hidden; }
+  .statuses li {
+    float: left;
+    margin: 10px 50px 10px 5px; }
+  .statuses .service-name {
+    font-size: 30px;
+    line-height: 80px; }
+  .statuses .service-status {
+    display: block;
+    float: left;
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    margin: 10px;
+    line-height: 60px;
+    text-align: center; }
+    .statuses .service-status.ok {
+      background-color: ForestGreen; }
+    .statuses .service-status.nok {
+      background-color: Crimson; }
+    .statuses .service-status.slow {
+      background-color: Gold;
+      color: black; }
+
+#quarantine-tests {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  float: left;
+  padding: 5px;
+  border: 2px solid #cccccc;
+  border-radius: 2px; }
+  #quarantine-tests .numbers {
+    float: left;
+    width: 200px; }
+    #quarantine-tests .numbers li {
+      margin-bottom: 5px;
+      width: 200px;
+      font: bold 18px/40px arial;
+      border-radius: 2px; }
+    #quarantine-tests .numbers li.total {
+      background: grey; }
+    #quarantine-tests .numbers li.passed {
+      background: green; }
+    #quarantine-tests .numbers li.failed {
+      background: red; }
+    #quarantine-tests .numbers li.caution {
+      margin-bottom: 0;
+      background: white; }

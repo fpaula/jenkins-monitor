@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>VSP Monitor</title>
+    <link href="/assets/monitor.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css" rel="stylesheet" type="text/css">
+    <style></style>
+</head>
+
+<body>
+    <div id="root">
+        <ul class="prioritary_jobs">
+            <li class="yellow" style="display: list-item;">
+                <div class="job" id="VSP-YSlow">
+                    <div class="basic-info"><span class="project-name">VSP-YSlow - </span><span class="build-number">14</span><span class="on-queue hidden">ON QUEUE</span>
+                    </div>
+                    <div class="remaining-time hasCountdown" data-remaining-time="0">00:00:00</div>
+                    <div class="last-commit"><span class="authors"></span><span class="commit-hash"></span><span class="message">Manually started</span>
+                    </div>
+                    <div class="commiters"></div>
+                </div>
+            </li>
+            <li class="red" style="display: list-item;">
+                <div class="job" id="VSP-WPT">
+                    <div class="basic-info"><span class="project-name">VSP-WPT - </span><span class="build-number">11</span><span class="on-queue hidden">ON QUEUE</span>
+                    </div>
+                    <div class="remaining-time hasCountdown" data-remaining-time="0">00:00:00</div>
+                    <div class="last-commit"><span class="authors"></span><span class="commit-hash"></span><span class="message">Manually started</span>
+                    </div>
+                    <div class="commiters"></div>
+                </div>
+            </li>
+            <li class="red" style="display: list-item;">
+                <div class="job" id="VSP-Smoke">
+                    <div class="basic-info"><span class="project-name">VSP-Smoke - </span><span class="build-number">30</span><span class="on-queue hidden">ON QUEUE</span>
+                    </div>
+                    <div class="remaining-time hasCountdown" data-remaining-time="0">00:00:00</div>
+                    <div class="last-commit"><span class="authors">guest</span><span class="commit-hash">0f0c55</span><span class="message">[US24759] Teste automatizado da funcionalidade de breadcrumb na nova pagina de busca</span>
+                    </div>
+                    <div class="commiters">
+                        <img class="commiter-images" src="/assets/avatar.png">
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="secondary_jobs">
+            <li class="blue" style="display: list-item;">
+                <div class="job" id="VSP-Test-Routes-Production">
+                    <div class="basic-info"><span class="project-name">VSP-Test-Routes-Production - </span><span class="build-number">5</span><span class="on-queue hidden">ON QUEUE</span>
+                    </div>
+                    <div class="remaining-time hasCountdown" data-remaining-time="0">00:00:00</div>
+                    <div class="last-commit"><span class="authors"></span><span class="commit-hash"></span><span class="message">Manually started</span>
+                    </div>
+                    <div class="commiters"></div>
+                </div>
+            </li>
+            <li class="blue" style="display: list-item;">
+                <div class="job" id="VSP-services-integration">
+                    <div class="basic-info"><span class="project-name">VSP-services-integration - </span><span class="build-number">17</span><span class="on-queue hidden">ON QUEUE</span>
+                    </div>
+                    <div class="remaining-time hasCountdown" data-remaining-time="0">00:00:00</div>
+                    <div class="last-commit"><span class="authors"></span><span class="commit-hash"></span><span class="message">Manually started</span>
+                    </div>
+                    <div class="commiters"></div>
+                </div>
+            </li>
+            <li class="blue" style="display: list-item;">
+                <div class="job" id="VSP-Segurança">
+                    <div class="basic-info"><span class="project-name">VSP-Segurança - </span><span class="build-number">36</span><span class="on-queue hidden">ON QUEUE</span>
+                    </div>
+                    <div class="remaining-time hasCountdown" data-remaining-time="0">00:00:00</div>
+                    <div class="last-commit"><span class="authors"></span><span class="commit-hash"></span><span class="message">Started by upstream project "VSP-Smoke" build number 29</span>
+                    </div>
+                    <div class="commiters"></div>
+                </div>
+            </li>
+            <li class="blue" style="display: list-item;">
+                <div class="job" id="VSP-Regression">
+                    <div class="basic-info"><span class="project-name">VSP-Regression - </span><span class="build-number">12</span><span class="on-queue hidden">ON QUEUE</span>
+                    </div>
+                    <div class="remaining-time hasCountdown" data-remaining-time="0">00:00:00</div>
+                    <div class="last-commit"><span class="authors"></span><span class="commit-hash"></span><span class="message">Started by upstream project "VSP-Smoke" build number 29</span>
+                    </div>
+                    <div class="commiters"></div>
+                </div>
+            </li>
+            <li class="blue" style="display: list-item;">
+                <div class="job" id="VSP-Performance-Nominal">
+                    <div class="basic-info"><span class="project-name">VSP-Performance-Nominal - </span><span class="build-number">26</span><span class="on-queue hidden">ON QUEUE</span>
+                    </div>
+                    <div class="remaining-time hasCountdown" data-remaining-time="0">00:00:00</div>
+                    <div class="last-commit"><span class="authors"></span><span class="commit-hash"></span><span class="message">Manually started</span>
+                    </div>
+                    <div class="commiters"></div>
+                </div>
+            </li>
+            <li class="blue" style="display: list-item;">
+                <div class="job" id="VSP-Mobile-API">
+                    <div class="basic-info"><span class="project-name">VSP-Mobile-API - </span><span class="build-number">11</span><span class="on-queue hidden">ON QUEUE</span>
+                    </div>
+                    <div class="remaining-time hasCountdown" data-remaining-time="0">00:00:00</div>
+                    <div class="last-commit"><span class="authors"></span><span class="commit-hash"></span><span class="message"></span>
+                    </div>
+                    <div class="commiters"></div>
+                </div>
+            </li>
+            <li class="blue" style="display: list-item;">
+                <div class="job" id="VSP-Contratos-Estabelecimentos">
+                    <div class="basic-info"><span class="project-name">VSP-Contratos-Estabelecimentos - </span><span class="build-number">25</span><span class="on-queue hidden">ON QUEUE</span>
+                    </div>
+                    <div class="remaining-time hasCountdown" data-remaining-time="0">00:00:00</div>
+                    <div class="last-commit"><span class="authors"></span><span class="commit-hash"></span><span class="message"></span>
+                    </div>
+                    <div class="commiters"></div>
+                </div>
+            </li>
+            <li class="blue" style="display: list-item;">
+                <div class="job" id="VSP-Contratos-Enquetes">
+                    <div class="basic-info"><span class="project-name">VSP-Contratos-Enquetes - </span><span class="build-number">25</span><span class="on-queue hidden">ON QUEUE</span>
+                    </div>
+                    <div class="remaining-time hasCountdown" data-remaining-time="0">00:00:00</div>
+                    <div class="last-commit"><span class="authors"></span><span class="commit-hash"></span><span class="message"></span>
+                    </div>
+                    <div class="commiters"></div>
+                </div>
+            </li>
+            <li class="blue" style="display: list-item;">
+                <div class="job" id="VSP-Contratos-Editorial">
+                    <div class="basic-info"><span class="project-name">VSP-Contratos-Editorial - </span><span class="build-number">29</span><span class="on-queue hidden">ON QUEUE</span>
+                    </div>
+                    <div class="remaining-time hasCountdown" data-remaining-time="0">00:00:00</div>
+                    <div class="last-commit"><span class="authors"></span><span class="commit-hash"></span><span class="message"></span>
+                    </div>
+                    <div class="commiters"></div>
+                </div>
+            </li>
+            <li class="blue" style="display: list-item;">
+                <div class="job" id="VSP-Contratos-Chamadas">
+                    <div class="basic-info"><span class="project-name">VSP-Contratos-Chamadas - </span><span class="build-number">21</span><span class="on-queue hidden">ON QUEUE</span>
+                    </div>
+                    <div class="remaining-time hasCountdown" data-remaining-time="0">00:00:00</div>
+                    <div class="last-commit"><span class="authors"></span><span class="commit-hash"></span><span class="message"></span>
+                    </div>
+                    <div class="commiters"></div>
+                </div>
+            </li>
+            <li class="blue" style="display: list-item;">
+                <div class="job" id="VSP-Contratos-Atrações">
+                    <div class="basic-info"><span class="project-name">VSP-Contratos-Atrações - </span><span class="build-number">17</span><span class="on-queue hidden">ON QUEUE</span>
+                    </div>
+                    <div class="remaining-time hasCountdown" data-remaining-time="0">00:00:00</div>
+                    <div class="last-commit"><span class="authors"></span><span class="commit-hash"></span><span class="message"></span>
+                    </div>
+                    <div class="commiters"></div>
+                </div>
+            </li>
+            <li class="blue" style="display: list-item;">
+                <div class="job" id="VSP-Contratos-Anotacoes">
+                    <div class="basic-info"><span class="project-name">VSP-Contratos-Anotacoes - </span><span class="build-number">20</span><span class="on-queue hidden">ON QUEUE</span>
+                    </div>
+                    <div class="remaining-time hasCountdown" data-remaining-time="0">00:00:00</div>
+                    <div class="last-commit"><span class="authors"></span><span class="commit-hash"></span><span class="message"></span>
+                    </div>
+                    <div class="commiters"></div>
+                </div>
+            </li>
+            <li class="blue" style="display: list-item;">
+                <div class="job" id="VSP-API-Performance-Nominal">
+                    <div class="basic-info"><span class="project-name">VSP-API-Performance-Nominal - </span><span class="build-number">4</span><span class="on-queue hidden">ON QUEUE</span>
+                    </div>
+                    <div class="remaining-time hasCountdown" data-remaining-time="0">00:00:00</div>
+                    <div class="last-commit"><span class="authors"></span><span class="commit-hash"></span><span class="message">Manually started</span>
+                    </div>
+                    <div class="commiters"></div>
+                </div>
+            </li>
+            <li class="blue" style="display: list-item;">
+                <div class="job" id="VSP-API">
+                    <div class="basic-info"><span class="project-name">VSP-API - </span><span class="build-number">234</span><span class="on-queue hidden">ON QUEUE</span>
+                    </div>
+                    <div class="remaining-time hasCountdown" data-remaining-time="0">00:00:00</div>
+                    <div class="last-commit"><span class="authors">oswaldo:</span><span class="commit-hash">83ecb1</span><span class="message">ultimos ajustes para monitoracao oboe</span>
+                    </div>
+                    <div class="commiters">
+                        <img class="commiter-images" src="/assets/oswaldo.png">
+                    </div>
+                </div>
+            </li>
+            <li class="blue" style="display: list-item;">
+                <div class="job" id="eventos-api">
+                    <div class="basic-info"><span class="project-name">eventos-api - </span><span class="build-number">4</span><span class="on-queue hidden">ON QUEUE</span>
+                    </div>
+                    <div class="remaining-time hasCountdown" data-remaining-time="0">00:00:00</div>
+                    <div class="last-commit"><span class="authors">oswaldo:</span><span class="commit-hash">cb296d</span><span class="message">Atualizando versão da gem oboe</span>
+                    </div>
+                    <div class="commiters">
+                        <img class="commiter-images" src="/assets/oswaldo.png">
+                    </div>
+                </div>
+            </li>
+            <li class="blue" style="display: list-item;">
+                <div class="job" id="atracoes-data-entry-smoke">
+                    <div class="basic-info"><span class="project-name">atracoes-data-entry-smoke - </span><span class="build-number">2</span><span class="on-queue hidden">ON QUEUE</span>
+                    </div>
+                    <div class="remaining-time hasCountdown" data-remaining-time="0">00:00:00</div>
+                    <div class="last-commit"><span class="authors"></span><span class="commit-hash"></span><span class="message">Manually started</span>
+                    </div>
+                    <div class="commiters"></div>
+                </div>
+            </li>
+            <li class="blue" style="display: list-item;">
+                <div class="job" id="atracoes-data-entry-regression">
+                    <div class="basic-info"><span class="project-name">atracoes-data-entry-regression - </span><span class="build-number">1</span><span class="on-queue hidden">ON QUEUE</span>
+                    </div>
+                    <div class="remaining-time hasCountdown" data-remaining-time="0">00:00:00</div>
+                    <div class="last-commit"><span class="authors"></span><span class="commit-hash"></span><span class="message">Manually started</span>
+                    </div>
+                    <div class="commiters"></div>
+                </div>
+            </li>
+            <li class="blue" style="display: list-item;">
+                <div class="job" id="atracoes-api">
+                    <div class="basic-info"><span class="project-name">atracoes-api - </span><span class="build-number">6</span><span class="on-queue hidden">ON QUEUE</span>
+                    </div>
+                    <div class="remaining-time hasCountdown" data-remaining-time="0">00:00:00</div>
+                    <div class="last-commit"><span class="authors">oswaldo:</span><span class="commit-hash">97d485</span><span class="message">tirando receitas do new relic do capistrano</span>
+                    </div>
+                    <div class="commiters">
+                        <img class="commiter-images" src="/assets/oswaldo.png">
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="spin-container" style="display: none;">
+        <div class="spin">
+            <div class="spinner" aria-role="progressbar" style="position: relative; z-index: 2000000000; left: 0px; top: 0px;">
+                <div style="position: absolute; top: -5px; -webkit-transform: translate3d(0, 0, 0); opacity: 0.25; -webkit-animation: opacity-78-25-0-14 2s linear infinite;">
+                    <div style="position: absolute; width: 31px; height: 10px; background-color: rgb(0, 0, 0); box-shadow: rgb(0, 0, 0) 0px 0px 4px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(0deg) translate(37px, 0px); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; top: 2px; background-position: initial initial; background-repeat: initial initial;"></div>
+                    <div style="position: absolute; width: 31px; height: 10px; background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(0deg) translate(37px, 0px); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-position: initial initial; background-repeat: initial initial;"></div>
+                </div>
+                <div style="position: absolute; top: -5px; -webkit-transform: translate3d(0, 0, 0); opacity: 0.25; -webkit-animation: opacity-78-25-1-14 2s linear infinite;">
+                    <div style="position: absolute; width: 31px; height: 10px; background-color: rgb(0, 0, 0); box-shadow: rgb(0, 0, 0) 0px 0px 4px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(25deg) translate(37px, 0px); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; top: 2px; background-position: initial initial; background-repeat: initial initial;"></div>
+                    <div style="position: absolute; width: 31px; height: 10px; background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(25deg) translate(37px, 0px); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-position: initial initial; background-repeat: initial initial;"></div>
+                </div>
+                <div style="position: absolute; top: -5px; -webkit-transform: translate3d(0, 0, 0); opacity: 0.25; -webkit-animation: opacity-78-25-2-14 2s linear infinite;">
+                    <div style="position: absolute; width: 31px; height: 10px; background-color: rgb(0, 0, 0); box-shadow: rgb(0, 0, 0) 0px 0px 4px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(51deg) translate(37px, 0px); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; top: 2px; background-position: initial initial; background-repeat: initial initial;"></div>
+                    <div style="position: absolute; width: 31px; height: 10px; background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(51deg) translate(37px, 0px); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-position: initial initial; background-repeat: initial initial;"></div>
+                </div>
+                <div style="position: absolute; top: -5px; -webkit-transform: translate3d(0, 0, 0); opacity: 0.25; -webkit-animation: opacity-78-25-3-14 2s linear infinite;">
+                    <div style="position: absolute; width: 31px; height: 10px; background-color: rgb(0, 0, 0); box-shadow: rgb(0, 0, 0) 0px 0px 4px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(77deg) translate(37px, 0px); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; top: 2px; background-position: initial initial; background-repeat: initial initial;"></div>
+                    <div style="position: absolute; width: 31px; height: 10px; background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(77deg) translate(37px, 0px); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-position: initial initial; background-repeat: initial initial;"></div>
+                </div>
+                <div style="position: absolute; top: -5px; -webkit-transform: translate3d(0, 0, 0); opacity: 0.25; -webkit-animation: opacity-78-25-4-14 2s linear infinite;">
+                    <div style="position: absolute; width: 31px; height: 10px; background-color: rgb(0, 0, 0); box-shadow: rgb(0, 0, 0) 0px 0px 4px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(102deg) translate(37px, 0px); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; top: 2px; background-position: initial initial; background-repeat: initial initial;"></div>
+                    <div style="position: absolute; width: 31px; height: 10px; background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(102deg) translate(37px, 0px); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-position: initial initial; background-repeat: initial initial;"></div>
+                </div>
+                <div style="position: absolute; top: -5px; -webkit-transform: translate3d(0, 0, 0); opacity: 0.25; -webkit-animation: opacity-78-25-5-14 2s linear infinite;">
+                    <div style="position: absolute; width: 31px; height: 10px; background-color: rgb(0, 0, 0); box-shadow: rgb(0, 0, 0) 0px 0px 4px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(128deg) translate(37px, 0px); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; top: 2px; background-position: initial initial; background-repeat: initial initial;"></div>
+                    <div style="position: absolute; width: 31px; height: 10px; background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(128deg) translate(37px, 0px); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-position: initial initial; background-repeat: initial initial;"></div>
+                </div>
+                <div style="position: absolute; top: -5px; -webkit-transform: translate3d(0, 0, 0); opacity: 0.25; -webkit-animation: opacity-78-25-6-14 2s linear infinite;">
+                    <div style="position: absolute; width: 31px; height: 10px; background-color: rgb(0, 0, 0); box-shadow: rgb(0, 0, 0) 0px 0px 4px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(154deg) translate(37px, 0px); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; top: 2px; background-position: initial initial; background-repeat: initial initial;"></div>
+                    <div style="position: absolute; width: 31px; height: 10px; background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(154deg) translate(37px, 0px); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-position: initial initial; background-repeat: initial initial;"></div>
+                </div>
+                <div style="position: absolute; top: -5px; -webkit-transform: translate3d(0, 0, 0); opacity: 0.25; -webkit-animation: opacity-78-25-7-14 2s linear infinite;">
+                    <div style="position: absolute; width: 31px; height: 10px; background-color: rgb(0, 0, 0); box-shadow: rgb(0, 0, 0) 0px 0px 4px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(180deg) translate(37px, 0px); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; top: 2px; background-position: initial initial; background-repeat: initial initial;"></div>
+                    <div style="position: absolute; width: 31px; height: 10px; background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(180deg) translate(37px, 0px); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-position: initial initial; background-repeat: initial initial;"></div>
+                </div>
+                <div style="position: absolute; top: -5px; -webkit-transform: translate3d(0, 0, 0); opacity: 0.25; -webkit-animation: opacity-78-25-8-14 2s linear infinite;">
+                    <div style="position: absolute; width: 31px; height: 10px; background-color: rgb(0, 0, 0); box-shadow: rgb(0, 0, 0) 0px 0px 4px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(205deg) translate(37px, 0px); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; top: 2px; background-position: initial initial; background-repeat: initial initial;"></div>
+                    <div style="position: absolute; width: 31px; height: 10px; background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(205deg) translate(37px, 0px); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-position: initial initial; background-repeat: initial initial;"></div>
+                </div>
+                <div style="position: absolute; top: -5px; -webkit-transform: translate3d(0, 0, 0); opacity: 0.25; -webkit-animation: opacity-78-25-9-14 2s linear infinite;">
+                    <div style="position: absolute; width: 31px; height: 10px; background-color: rgb(0, 0, 0); box-shadow: rgb(0, 0, 0) 0px 0px 4px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(231deg) translate(37px, 0px); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; top: 2px; background-position: initial initial; background-repeat: initial initial;"></div>
+                    <div style="position: absolute; width: 31px; height: 10px; background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(231deg) translate(37px, 0px); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-position: initial initial; background-repeat: initial initial;"></div>
+                </div>
+                <div style="position: absolute; top: -5px; -webkit-transform: translate3d(0, 0, 0); opacity: 0.25; -webkit-animation: opacity-78-25-10-14 2s linear infinite;">
+                    <div style="position: absolute; width: 31px; height: 10px; background-color: rgb(0, 0, 0); box-shadow: rgb(0, 0, 0) 0px 0px 4px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(257deg) translate(37px, 0px); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; top: 2px; background-position: initial initial; background-repeat: initial initial;"></div>
+                    <div style="position: absolute; width: 31px; height: 10px; background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(257deg) translate(37px, 0px); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-position: initial initial; background-repeat: initial initial;"></div>
+                </div>
+                <div style="position: absolute; top: -5px; -webkit-transform: translate3d(0, 0, 0); opacity: 0.25; -webkit-animation: opacity-78-25-11-14 2s linear infinite;">
+                    <div style="position: absolute; width: 31px; height: 10px; background-color: rgb(0, 0, 0); box-shadow: rgb(0, 0, 0) 0px 0px 4px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(282deg) translate(37px, 0px); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; top: 2px; background-position: initial initial; background-repeat: initial initial;"></div>
+                    <div style="position: absolute; width: 31px; height: 10px; background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(282deg) translate(37px, 0px); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-position: initial initial; background-repeat: initial initial;"></div>
+                </div>
+                <div style="position: absolute; top: -5px; -webkit-transform: translate3d(0, 0, 0); opacity: 0.25; -webkit-animation: opacity-78-25-12-14 2s linear infinite;">
+                    <div style="position: absolute; width: 31px; height: 10px; background-color: rgb(0, 0, 0); box-shadow: rgb(0, 0, 0) 0px 0px 4px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(308deg) translate(37px, 0px); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; top: 2px; background-position: initial initial; background-repeat: initial initial;"></div>
+                    <div style="position: absolute; width: 31px; height: 10px; background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(308deg) translate(37px, 0px); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-position: initial initial; background-repeat: initial initial;"></div>
+                </div>
+                <div style="position: absolute; top: -5px; -webkit-transform: translate3d(0, 0, 0); opacity: 0.25; -webkit-animation: opacity-78-25-13-14 2s linear infinite;">
+                    <div style="position: absolute; width: 31px; height: 10px; background-color: rgb(0, 0, 0); box-shadow: rgb(0, 0, 0) 0px 0px 4px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(334deg) translate(37px, 0px); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; top: 2px; background-position: initial initial; background-repeat: initial initial;"></div>
+                    <div style="position: absolute; width: 31px; height: 10px; background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(334deg) translate(37px, 0px); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-position: initial initial; background-repeat: initial initial;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="statuses"></ul>
+    <script src="/assets/jquery-1.7.1.min.js"></script>
+    <script src="/assets/jquery.countdown.min.js"></script>
+    <script src="/assets/spin.min.js"></script>
+    <script src="/assets/application.js"></script>
+</body>
+
+</html>
